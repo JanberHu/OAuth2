@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://slides.com/biezhi/oauth2/fullscreen -->
+<html class="sl-root decks fullscreen mz-history mz-svg mz-localstorage mz-csspositionsticky mz-supports mz-cssanimations mz-backgroundsize mz-no-cssgridlegacy mz-cssgrid mz-flexbox mz-csstransforms mz-csstransforms3d mz-csstransitions mz-fullscreen mz-webpanimation loaded ua-mac ua-chrome reveal-full-page fonts-are-ready reveal-is-ready"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>OAuth2 协议</title>
+		<meta name="description" content="A presentation created with Slides.">
+		<meta property="og:title" content="OAuth2 协议">
+		<meta property="og:description" content="A presentation created with Slides.">
+		<meta property="og:site_name" content="Slides">
+		<meta property="og:image" content="https://media.slid.es/thumbnails/cd45eba51a7500f526f336dda8fee041/thumb.jpg?1542181212">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://slides.com/biezhi/oauth2/fullscreen">
+		<meta property="fb:app_id" content="146002942236376">
+
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="stylesheet" media="all" href="./OAuth2 协议_files/slides-5463dbbad1a68c6e9a85872698fd43e74078271bfd42f08aadf3e7324137e99c.css">
+		<link rel="stylesheet" media="all" href="./OAuth2 协议_files/application-d765afd133c93cad8731de02dad841402fd8ee5c920bed06838eabfb070539b3.css">
+		<link rel="stylesheet" media="all" href="./OAuth2 协议_files/deck-v2-48db2ff32fa8faa2f0d1fe3b017788bb2f1515d0f0fb07e6784e4d2abf58ffe9.css">
+
+
+
+<style id="user-css-output" type="text/css"></style>
+		<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="qDb6nIL5qe+oK0R6sgDHUi2q2DSh4IsrO9SrCFfbbKtDir3xQ1OxFxJ7miycU4cq/XSfdYAwOPjhreWeM8EQQw==">
+		<script async="" src="./OAuth2 协议_files/analytics.js"></script><script type="text/javascript">
+  if( navigator.doNotTrack !== '1' && !/dnt=1/.test( window.location.search ) ) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-39670045-1', 'auto');
+    ga('send', 'pageview');
+
+  }
+</script><style type="text/css">#MsnDialog.ad, #MyMoveAd, #QQ_Full, #ad-SNSSplashAd, #ad6cn, #adBody07, #adLeftFloat, #adRightFloat, #ad_box1, #ad_box2, #ad_full, #ad_headerbanner, #ads_c_tpc, #ads_top_video, #adtop1, #adx_cggp, #crazy_ad_float, #crazy_ad_layer, #cs_left_couplet, #cs_right_couplet, #doyoo_mon_mask, #doyoo_monitor, #duilian_left, #duilian_right, #eis_pad1, #eis_pad2, #floatAd, #floatad-winpop, #fwin_popad_7ree, #fwin_popad_7ree + #fwin_dialog, #gg300, #googleAdIndexTop, #haoetv1, #js-ad-map, #js_ads_banner_top, #js_ads_banner_top_slide, #kfpopupDiv, #leftCouple, #leftCouplet, #leftFloat + #rightFloat, #left_couple, #left_down_float_ad, #left_float + #right_float, #left_top_ad, #left_up_float_ad, #lovexin1, #lovexin11, #lovexin12, #lovexin13, #lovexin14 { display: none!important; z-index:-1!important; height:0px!important;}
+#lovexin2, #mbjx_ad, #miaov_float_layer, #micast_ads, #movieInfoRight, #my-adsFPR, #navcontainer + .moneyarea, #netease_mail_footer, #olfullad, #overture_ads_bottom_td, #overture_ads_top_td, #popup.t, #ptcmsad1, #qj960a, #qj960b, #results.content-main > .eLeft, #rightCouple, #rightCouple + #leftFloat, #rightCouplet, #rightCouplet + #leftFloat, #right_couple, #right_couple + #left_float, #right_down_float_ad, #right_up_float_ad, #shareman_ad, #sitefocus.focus, #snActive-wrap, #table1[width="468"][height="50"], #table1[width="794"][height="60"], #table1[width="812"][height="50"], #tanx-con-1, #tanx-fold-main, #textggs, #top_ads0, #toperAd2, #toptb + div[align="center"], #tr_ad1, #tr_ad10, #tr_ad11, #tr_ad2, #tr_ad3, #tr_ad4, #tr_ad5, #tr_ad6, #tr_ad7, #tr_ad8, #tr_ad9, #tripadvisor-ad, #xinnxi, #xinxi { display: none!important; z-index:-1!important; height:0px!important;}
+#zds_ad, ._cggp, ._ggs, ._popIn_recommend_article_ad, ._popIn_recommend_article_ad_reserved, .a_cn, .a_fl, .a_pb, .a_pr, .a_sxc, .a_xsfl, .ad-above-footer, .ad-below-adjacent-post, .ad-below-header-menu, .ad-below-post-title, .ad-below-related-post, .ad-couplet-common, .ad-left-down, .ad-left-top, .ad-right-down, .ad-right-top, .ad-site, .ad250left, .ad250right, .ad300left, .ad336left, .ad990x130, .ad990x90, .ad_couplebanner, .ad_fixed, .ad_footerbanner, .ad_headerbanner, .ad_hf, .ad_home_current, .ad_midd, .ad_right_1, .ad_right_2, .ad_thread, .ads > a > img[src*=".sinaimg."], .adsense160, .adsense200, .adsoho, .assort-ad, .banner-ad-section, .bdyp-sygg-ul, .below_ads, .bm.a_c, .bn728-93, .bottom-adv, .bottomSponsor { display: none!important; z-index:-1!important; height:0px!important;}
+.bus_adsbox, .cari-ads, .chat-ad, .chat-right-ad, .chat-sysbroadcast-ad, .chat-top-ad, .comiis_adbox, .con_ad, .content-video > .ads, .content-video > .ads-player, .content_ad_300, .couplet_9cb0d, .customSlideshow-ad-below, .d_slidebanner, .f-sign-cont[data-dysign-adid], .gg1000, .gg430, .gg_300, .gg_950, .gg_960, .gg_full, .ggad, .ggdistich, .gggtop, .ggpost-below, .ggtop, .google_adsense2, .gpt_ads_box, .hao123-unionad-pic, .heg > .div-list, .his-sign-cont[data-dysign-adid], .iHead960x90, .index_alert_gg, .indexad2, .indexad3, .indexad4, .it618_firstad_flex, .kf_qycn_com_cckf_welcomebox, .leftadv, .lol-ad, .lol_ad, .lyzm-prevent, .menutab_ad, .ml_ad1, .ml_ad3, .ml_ad5, .mlad, .movie-advert-link, .pagead_3, .player-bottom-gg { display: none!important; z-index:-1!important; height:0px!important;}
+.readerAd, .room-ad-bottom, .room-ad-top, .room-ad-video-down, .scupioadslot, .sxAdBox, .theme_custom_slidebox-ad-below, .tipadds, .tmall_ad_container, .top-read-ad, .topSponsor, .toy52_outer, .toy52apparel_ALL, .twavt-ads, .wf_ad_block, .widget_ad_sidebar, .widget_adbox, .wp.a_f, .wp.a_h, .wumii-bottom-popup, .wumii-widget-ad, .wzad, .yd_ad, .yd_ad1, .yd_ad2, .yd_ad3, .yd_ad5, .yd_ad6, .zone_wap_banner2, A[href*=".com/?Agent="], a[href*=".123ch.cn"], a[href*=".222bz.com/"], a[href*=".9xiazaiqi.com"], a[href*=".com/?Extend="], a[href*=".com/?p="][target="_blank"] > img[src$=".gif"], a[href*=".com/Register.aspx?aid="], a[href*=".com/Register/?a="], a[href*=".com/Register?a="], a[href*=".com?aff="], a[href*=".com?intr="], a[href*=".downok.com"], a[href*=".qpzqxz.com/"], a[href*=".qtj5.com/"], a[href*=".tudown.com/"], a[href*=".wjLkj.com/"], a[href*=".yyk2.com/"], a[href*="/?INTR="], a[href*="/?Intr="], a[href*="/?intr="], a[href^="http://ad.moemoe."] { display: none!important; z-index:-1!important; height:0px!important;}
+a[href^="http://go.gotourl.xyz/"], a[href^="http://www.upupoo.com/?"], a[href^="https://hi.potvpn.com/?from="], body[onload*="u()"] > #x, div#ad_id, div[id^="ad_thread"], img[src$="/2016-0114-700X70.gif"] ~ a[onmouseover="this.style.background='#DEF5CD';"]:nth-child(-n+226), img[src$="/2016-0114-700X70.gif"] ~ span[class^="f"] > span > a[onmouseover="this.style.background='#DEF5CD';"]:first-child:last-child, img[src$="/47650fdad90b35b07d9339b792713f7e.gif"] ~ a[onmouseover="this.style.background='#DEF5CD';"]:nth-child(-n+226), img[src$="/47650fdad90b35b07d9339b792713f7e.gif"] ~ span[class^="f"] > span > a[onmouseover="this.style.background='#DEF5CD';"]:first-child:last-child, img[src$="/a1b45005bda18472821222856c6d4f99.gif"] ~ a[onmouseover="this.style.background='#DEF5CD';"]:nth-child(-n+226), img[src$="/a1b45005bda18472821222856c6d4f99.gif"] ~ span[class^="f"] > span > a[onmouseover="this.style.background='#DEF5CD';"]:first-child:last-child, script + #rbbox, script + .sptable[cellpadding="5"], script + .sptable_do_not_remove[cellpadding="5"], table[style="border:#e8e8e8 1px solid;"] + div[style="margin-top:5px"] > table[style="width:100%;"][cellspacing="0"][cellpadding="1"][bordercolor="#999999"][border="1"], [style="display:none"] + iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div:not([id]):not([class]):not([style]) > div:not([id]):not([class]):not([style]) > iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[style^="width: 100%;"][style$="display: block;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[style^="width: 100%;"][style$="margin: 0px;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[style^="width: 100%;"][style$="opacity: 100;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[style^="width: 100%;"][style$="overflow: hidden;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[style^="width: 100%;"][style$="visibility: visible;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[style^="width: 100%;"][style$="z-index: inherit;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], #cpro_container, a[href*="/mobads.php?"], div[id][style="width: 100%;"] > div > div > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[id][style="width: 100%;"] > div > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[id][style="width: 100%;"] > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[style="width: 100%;"]:not([id]):not([class]) > iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[style^="width: 100%;"]:not([id]):not([class]) > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], .footer > #box[style="width:100%;height:100%;position:fixed;top:0"], a[href^="http://yunbofangbt."], #j-new-ad, .a_sxfl, .a_sxmu, .a_sxp, .a_sxpb, .heg > .partner-list, a[href^="/dasp.php?a="], [class^="ADTOPLB"] { display: none!important; z-index:-1!important; height:0px!important;}
+</style><style type="text/css">.adsbygoogle, .ggbox, .banner-site, .a_p, .a_fr, a[href*="/cpro/"], a[href*="/cpro."], a[href*="/?aff="], a[href*=".umeng.com"], a > img[width="980"][src*=".sinaimg."], a > img[width="960"][src*=".sinaimg."], a > img[src*=".sinaimg."][src$=".gif"][style*="width:960"], .wp.a_t, .widget_ui_ads, .baiduad, .a_pt, .a_mu, #kfivtwin, #haoetv, #gg1 { display: none!important; z-index:-1!important; height:0px!important;}
+</style>
+			<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@Slides">
+	<meta name="twitter:title" content="OAuth2 协议">
+	<meta name="twitter:description" content="A presentation created with Slides.">
+	<meta name="twitter:image" content="https://media.slid.es/thumbnails/cd45eba51a7500f526f336dda8fee041/thumb.jpg?1542181212">
+
+	<link rel="stylesheet" href="./OAuth2 协议_files/montserrat.css"><link rel="stylesheet" href="./OAuth2 协议_files/opensans.css"><style type="text/css"></style><script type="text/javascript" src="./OAuth2 协议_files/highlight-b633f6a6f8f33092c77cdeec43341175b82c93f333c1bf3d52ca8ccb5f62c727.js"></script><style>a, button, .sl-select, .sl-checkbox label, .radio label, .focus-outline { outline: none !important; }</style><script type="text/javascript" src="./OAuth2 协议_files/zoom-a5d62a27f9dd7ce53da982c71e540b906097da17f6aadaf4d6532ff16c39d0c4.js"></script><style type="text/css">.hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}</style></head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-silver-blue" style="--slide-width:960px; --slide-height:700px; transition: -webkit-transform 0.8s ease 0s;">
+		<div class="reveal concave focused has-vertical-slides has-horizontal-slides ready" role="application" data-transition-speed="default" data-background-transition="convex" style="cursor: none;">
+			<div class="slides" style="width: 960px; height: 700px; inset: 50% auto auto 50%; transform: translate(-50%, -50%) scale(1.03686);">
+				<section data-id="aa285035c5af486ec4729e705eb23e48" class="present" style="display: block;"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 22px; height: auto;" data-block-id="dd7cbfdf5528663f2393cf6ed1aafbef"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="background-color: rgb(241, 194, 50); color: rgb(17, 17, 17); z-index: 11;">
+<h1>理解 OAuth2 协议</h1>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 634px; height: 535px; left: 160px; top: 140px;" data-block-id="5e83deb54f8786e2e92eab2796d3a934"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1718" data-natural-height="1450" style="" data-lazy-loaded="" src="./OAuth2 协议_files/5bebc91e3a99d.png"></div></div></section><section data-id="ee6b441bc0b61c65d85f0084f6652bb5" class="future" style="display: block;" data-fragment="-1" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 137px; left: 0px; top: 0px; height: auto;" data-block-id="01f9c848d68df855f0f591e77c5eccb6"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="background-color: rgb(241, 194, 50); color: rgb(17, 17, 17); z-index: 11; font-size: 70%;">
+<pre>OAuth2 协议</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 43px; height: auto;" data-block-id="26a53ced929d5c368df335013adada3e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="background-color: rgb(241, 194, 50); color: rgb(17, 17, 17); z-index: 12;">
+<h1>协议角色和流程</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="99561f593f264ecfb9c84618c06f0dfa" style="height: auto; min-width: 30px; min-height: 30px; width: 404px; left: 55px; top: 210px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; line-height: 1.69; font-size: 70%;" data-has-line-height="">
+<ol>
+	<li class="fade-down fragment" data-fragment-index="0">资源所有者（resource owner）</li>
+	<li class="fragment" data-fragment-index="1">客户端/第三方应用（client）</li>
+	<li class="fragment" data-fragment-index="2">资源服务器（resource server）</li>
+	<li class="fragment" data-fragment-index="3">授权服务器（authorization server）</li>
+</ol>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="d6b5068015de8ec3435bce0650830f2c" style="height: auto; min-width: 30px; min-height: 30px; width: 227px; left: 30px; top: 560px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 70%;" data-fragment-index="3">
+<ul>
+	<li class="visible"><a href="http://open.weibo.com/wiki/OAuth%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E" target="_blank">微博 OAuth</a></li>
+	<li class="visible"><a href="https://tools.ietf.org/html/rfc6749" target="_blank">RFC 6749</a></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 604px; height: 359px; left: 295px; top: 255px;" data-block-id="e817eb7284904032948c4222b5eaa12c"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="797" data-natural-height="474" data-lazy-loaded="" src="./OAuth2 协议_files/5bebcb5c5c866.jpg"></div></div>
+<div class="sl-block" data-block-type="code" data-block-id="45dbadd0f91898becb76d80466bc505f" style="min-width: 30px; min-height: 30px; width: 884px; height: 518px; left: 38px; top: 161px;"><div class="sl-block-content notranslate fragment fade-up" style="z-index: 16; font-size: 130%; border-style: solid; border-width: 15px; border-radius: 15px; border-color: rgb(2, 43, 53);" data-highlight-theme="solarized-dark" data-fragment-index="4"><pre class="none"><code class="hljs routeros">    +--------+                               +---------------+
+    |        |--(A)- Authorization Request -&gt;|  <span class="hljs-built_in"> Resource </span>   |
+    |        |                               |     Owner     |
+    |        |&lt;-(B)-- Authorization Grant ---|               |
+    |        |                               +---------------+
+    |        |
+    |        |                               +---------------+
+    |        |--(C)-- Authorization Grant --&gt;| Authorization |
+    |<span class="hljs-built_in"> Client </span>|                               |    <span class="hljs-built_in"> Server </span>   |
+    |        |&lt;-(D)----- Access Token -------|               |
+    |        |                               +---------------+
+    |        |
+    |        |                               +---------------+
+    |        |--(E)----- Access Token ------&gt;|   <span class="hljs-built_in"> Resource </span>  |
+    |        |                               |    <span class="hljs-built_in"> Server </span>   |
+    |        |&lt;-(F)--- Protected<span class="hljs-built_in"> Resource </span>---|               | 
+    +--------+                               +---------------+
+
+               Figure 1: Abstract Protocol Flow</code></pre></div></div></section><section data-id="2147d0d61bf480abd822760ba360043d" hidden="" aria-hidden="true" class="future" style="display: block;"><div class="sl-block" data-block-type="text" style="width: 137px; left: 0px; top: 0px; height: auto;" data-block-id="4cd0df90d7209f27bbd8824182ae202f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="background-color: rgb(241, 194, 50); color: rgb(17, 17, 17); z-index: 11; font-size: 70%;">
+<pre>OAuth2 协议</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 43px; height: auto;" data-block-id="9d4a7ec2919de2eb1372b2e8b28b69c3"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="background-color: rgb(241, 194, 50); color: rgb(17, 17, 17); z-index: 12;">
+<h1>OAuth 授权</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="a9955d9751f2723f9fe427ba015c522f" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 191px; top: 280px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<ul style="color:rgb(68, 68, 68)">
+	<li class="fade-down fragment" data-fragment-index="0">应用名称</li>
+	<li class="fragment" data-fragment-index="1">应用网站</li>
+	<li class="fragment" data-fragment-index="2">重定向 URI 或回调 URL（redirect_uri）</li>
+	<li class="fragment" data-fragment-index="3">客户端标识 client_id</li>
+	<li class="fragment" data-fragment-index="4">客户端密钥 client_secret</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="bfdbd15881866aa154aa4bf07b566e56" style="height: auto; min-width: 30px; min-height: 30px; width: 268px; left: 310px; top: 191px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>授权所需信息</p>
+</div></div></section><section class="stack future" data-id="6d95428596a0b4cff1a215daa823bc2c" hidden="" aria-hidden="true" style="display: none;" data-previous-indexv="0"><section data-id="3997ca4a9bf0183601f86ffe7cb03982" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 137px; left: 0px; top: 0px; height: auto;" data-block-id="c750c5c15c3e52ec81dd1dbd2dd52b98"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="background-color: rgb(241, 194, 50); color: rgb(17, 17, 17); z-index: 11; font-size: 70%;">
+<pre>OAuth2 协议</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 43px; height: auto;" data-block-id="b772724437ca1829fb9b02f756a8bf5a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="background-color: rgb(241, 194, 50); color: rgb(17, 17, 17); z-index: 12;">
+<h1>OAuth 授权方式</h1>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 794px; height: 510px; left: 86px; top: 155px;" data-block-id="9207b737b01f027049a6d7286e303ebf"><div class="sl-block-content notranslate" style="z-index: 10; border-style: solid; border-width: 10px; border-color: rgb(2, 43, 53); border-radius: 10px;" data-highlight-theme="solarized-dark"><pre class="none"><code style="padding: 0px;" class="hljs gherkin">     +----------+
+     |<span class="hljs-string"> Resource </span>|
+     |<span class="hljs-string">   Owner  </span>|
+     |<span class="hljs-string">          </span>|
+     +----------+
+          ^
+          |<span class="hljs-string">
+         (B)
+     +----</span>|<span class="hljs-string">-----+          Client Identifier      +---------------+
+     </span>|<span class="hljs-string">         -+----(A)-- &amp; Redirection URI ----&gt;</span>|<span class="hljs-string">               </span>|
+     |<span class="hljs-string">  User-   </span>|<span class="hljs-string">                                 </span>|<span class="hljs-string"> Authorization </span>|
+     |<span class="hljs-string">  Agent  -+----(B)-- User authenticates ---&gt;</span>|<span class="hljs-string">     Server    </span>|
+     |<span class="hljs-string">          </span>|<span class="hljs-string">                                 </span>|<span class="hljs-string">               </span>|
+     |<span class="hljs-string">         -+----(C)-- Authorization Code ---&lt;</span>|<span class="hljs-string">               </span>|
+     +-|<span class="hljs-string">----</span>|<span class="hljs-string">---+                                 +---------------+
+       </span>|<span class="hljs-string">    </span>|<span class="hljs-string">                                         ^      v
+      (A)  (C)                                        </span>|<span class="hljs-string">      </span>|
+       |<span class="hljs-string">    </span>|<span class="hljs-string">                                         </span>|<span class="hljs-string">      </span>|
+       ^    v                                         |<span class="hljs-string">      </span>|
+     +---------+                                      |<span class="hljs-string">      </span>|
+     |<span class="hljs-string">         </span>|<span class="hljs-string">&gt;---(D)-- Authorization Code ---------'      </span>|
+     |<span class="hljs-string">  Client </span>|<span class="hljs-string">          &amp; Redirection URI                  </span>|
+     |<span class="hljs-string">         </span>|<span class="hljs-string">                                             </span>|
+     |<span class="hljs-string">         </span>|<span class="hljs-string">&lt;---(E)----- Access Token -------------------'
+     +---------+       (w/ Optional Refresh Token)</span></code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 511px; left: 333px; top: 171px;" data-block-id="0511df7a6e9a8b34425e2954c4399794"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(204, 204, 204);">
+<p><strong>授权码模式（authorization code）</strong></p>
+</div></div></section><section data-id="707fd9514a41f43163a76d08efe48f8a" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 137px; left: 0px; top: 0px; height: auto;" data-block-id="6373052777d0b8d307534510a5bfec59"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="background-color: rgb(241, 194, 50); color: rgb(17, 17, 17); z-index: 11; font-size: 70%;">
+<pre>OAuth2 协议</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 43px; height: auto;" data-block-id="1d3629af3257efe6f8357584bb162034"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="background-color: rgb(241, 194, 50); color: rgb(17, 17, 17); z-index: 12;">
+<h1>OAuth 授权方式</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 582px; left: 189px; top: 171px;" data-block-id="dec6c6777d45c5ecaa2fabd5af452fee"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(0, 0, 0);">
+<p>授权码模式（authorization code）参数</p>
+</div></div>
+<div class="sl-block" data-block-type="table" data-block-id="4bf8e65e6f970594f57f12150acd9399" style="height: auto; min-width: 120px; min-height: 30px; width: 871px; left: 69px; top: 241px;"><div class="sl-block-content" style="z-index: 14;" data-table-rows="6" data-table-cols="2"><table><tbody>
+<tr>
+<th style="width: 225px;">字段</th>
+<th>描述</th>
+</tr>
+<tr>
+<td style="width: 225px;">response_type</td>
+<td>必须，固定为 code，表示这是一个授权码请求。</td>
+</tr>
+<tr>
+<td style="width: 225px;">client_id</td>
+<td>必须，在授权服务器注册应用后得到的唯一标识</td>
+</tr>
+<tr>
+<td style="width: 225px;">redirect_uri</td>
+<td>可选，通过客户端注册的重定向 URI（一般要求且与注册时一致）。</td>
+</tr>
+<tr>
+<td style="width: 225px;">scope</td>
+<td>可选，请求资源范围，多个空格隔开。</td>
+</tr>
+<tr>
+<td style="width: 225px;">state</td>
+<td>可选（推荐），如果存在，原样返回给客户端。</td>
+</tr>
+</tbody></table></div></div></section><section data-id="1083a1969a5e2bc923e9a962ea90f36f" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 137px; left: 0px; top: 0px; height: auto;" data-block-id="f9d070b5d3fd3897e3e7c0947b37c02b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="background-color: rgb(241, 194, 50); color: rgb(17, 17, 17); z-index: 11; font-size: 70%;">
+<pre>OAuth2 协议</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 43px; height: auto;" data-block-id="1be87b2e6081f390438120f797db85de"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="background-color: rgb(241, 194, 50); color: rgb(17, 17, 17); z-index: 12;">
+<h1>OAuth 授权方式</h1>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 784px; height: 473px; left: 88px; top: 217px;" data-block-id="55cffd44d572ceebb4854b6e62588ef1"><div class="sl-block-content notranslate" style="z-index: 10; border-style: solid; border-width: 10px; border-color: rgb(2, 43, 53); border-radius: 10px;" data-highlight-theme="solarized-dark"><pre class="none"><code style="padding: 20px;" class="hljs gherkin"> +--------+                                           +---------------+
+ |<span class="hljs-string">        </span>|<span class="hljs-string">--(A)------- Authorization Grant ---------&gt;</span>|<span class="hljs-string">               </span>|
+ |<span class="hljs-string">        </span>|<span class="hljs-string">                                           </span>|<span class="hljs-string">               </span>|
+ |<span class="hljs-string">        </span>|<span class="hljs-string">&lt;-(B)----------- Access Token -------------</span>|<span class="hljs-string">               </span>|
+ |<span class="hljs-string">        </span>|<span class="hljs-string">               &amp; Refresh Token             </span>|<span class="hljs-string">               </span>|
+ |<span class="hljs-string">        </span>|<span class="hljs-string">                                           </span>|<span class="hljs-string">               </span>|
+ |<span class="hljs-string">        </span>|<span class="hljs-string">                            +----------+   </span>|<span class="hljs-string">               </span>|
+ |<span class="hljs-string">        </span>|<span class="hljs-string">--(C)---- Access Token ----&gt;</span>|<span class="hljs-string">          </span>|<span class="hljs-string">   </span>|<span class="hljs-string">               </span>|
+ |<span class="hljs-string">        </span>|<span class="hljs-string">                            </span>|<span class="hljs-string">          </span>|<span class="hljs-string">   </span>|<span class="hljs-string">               </span>|
+ |<span class="hljs-string">        </span>|<span class="hljs-string">&lt;-(D)- Protected Resource --</span>|<span class="hljs-string"> Resource </span>|<span class="hljs-string">   </span>|<span class="hljs-string"> Authorization </span>|
+ |<span class="hljs-string"> Client </span>|<span class="hljs-string">                            </span>|<span class="hljs-string">  Server  </span>|<span class="hljs-string">   </span>|<span class="hljs-string">     Server    </span>|
+ |<span class="hljs-string">        </span>|<span class="hljs-string">--(E)---- Access Token ----&gt;</span>|<span class="hljs-string">          </span>|<span class="hljs-string">   </span>|<span class="hljs-string">               </span>|
+ |<span class="hljs-string">        </span>|<span class="hljs-string">                            </span>|<span class="hljs-string">          </span>|<span class="hljs-string">   </span>|<span class="hljs-string">               </span>|
+ |<span class="hljs-string">        </span>|<span class="hljs-string">&lt;-(F)- Invalid Token Error -</span>|<span class="hljs-string">          </span>|<span class="hljs-string">   </span>|<span class="hljs-string">               </span>|
+ |<span class="hljs-string">        </span>|<span class="hljs-string">                            +----------+   </span>|<span class="hljs-string">               </span>|
+ |<span class="hljs-string">        </span>|<span class="hljs-string">                                           </span>|<span class="hljs-string">               </span>|
+ |<span class="hljs-string">        </span>|<span class="hljs-string">--(G)----------- Refresh Token -----------&gt;</span>|<span class="hljs-string">               </span>|
+ |<span class="hljs-string">        </span>|<span class="hljs-string">                                           </span>|<span class="hljs-string">               </span>|
+ |<span class="hljs-string">        </span>|<span class="hljs-string">&lt;-(H)----------- Access Token -------------</span>|<span class="hljs-string">               </span>|
+ +--------+           &amp; Optional Refresh Token        +---------------+
+
+              Figure 2: Refreshing an Expired Access Token</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 476px; left: 222px; top: 159px;" data-block-id="409c825888a7bddd393bd8752dda2907"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(17, 17, 17);">
+<p>Refresh Token</p>
+</div></div></section></section><section data-id="02559097b37825df9b14dbb34cf38155" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 137px; left: 0px; top: 0px; height: auto;" data-block-id="ac025af2447888b5357b557b0b578d9b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="background-color: rgb(241, 194, 50); color: rgb(17, 17, 17); z-index: 11; font-size: 70%;">
+<pre>OAuth2 协议</pre>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 640px; height: 619px; left: 160px; top: 70px;" data-block-id="cc50be406bd24bad102d0e6fe8df6849"><div class="sl-block-content notranslate" style="z-index: 10; border-style: solid; border-width: 10px; border-color: rgb(2, 43, 53); border-radius: 10px; font-size: 90%;" data-highlight-theme="solarized-dark"><pre class="none"><code style="padding: 0px;" class="hljs routeros"> +----------+
+ |<span class="hljs-built_in"> Resource </span>|
+ |  Owner   |
+ |          |
+ +----------+
+      ^
+      |
+     (B)
+ +----|-----+         <span class="hljs-built_in"> Client </span>Identifier     +---------------+
+ |         -+----(A)-- &amp; Redirection URI ---&gt;|               |
+ |  User-   |                                | Authorization |
+ |  Agent  -|----(B)--<span class="hljs-built_in"> User </span>authenticates --&gt;|    <span class="hljs-built_in"> Server </span>   |
+ |          |                                |               |
+ |          |&lt;---(C)--- Redirection URI ----&lt;|               |
+ |          |          with Access Token     +---------------+
+ |          |            <span class="hljs-keyword">in</span> Fragment
+ |          |                                +---------------+
+ |          |----(D)--- Redirection URI ----&gt;|   Web-Hosted  |
+ |          |          without Fragment      |    <span class="hljs-built_in"> Client </span>   |
+ |          |                                |   <span class="hljs-built_in"> Resource </span>  |
+ |     (F)  |&lt;---(E)-------<span class="hljs-built_in"> Script </span>---------&lt;|               |
+ |          |                                +---------------+
+ +-|--------+
+   |    |
+  (A)  (G) Access Token
+   |    |
+   ^    v
+   +---------+
+   |         |
+   | <span class="hljs-built_in"> Client </span>|
+   |         |
+   +---------+
+
+                Figure 4: Implicit Grant Flow
+</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 385px; left: 415px; top: 76px;" data-block-id="8fe856ca7d516e2c39ff255494c16edd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(204, 204, 204);">
+<p><strong>简化模式（implicit grant）</strong></p>
+</div></div></section><section data-id="a9c331ae656120896ab2fd8742438b2f" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 137px; left: 0px; top: 0px; height: auto;" data-block-id="98cc17e2c7c1bba02a97c3ce705347b0"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="background-color: rgb(241, 194, 50); color: rgb(17, 17, 17); z-index: 11; font-size: 70%;">
+<pre>OAuth2 协议</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 43px; height: auto;" data-block-id="d085d86a872ac84882f99b828bd8b613"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="background-color: rgb(241, 194, 50); color: rgb(17, 17, 17); z-index: 12;">
+<h1>OAuth 授权方式</h1>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 773px; height: 441px; left: 94px; top: 183px;" data-block-id="5fa1dee0b1faacf0d712c3f8d726e624"><div class="sl-block-content notranslate" style="z-index: 10; border-style: solid; border-width: 10px; border-color: rgb(2, 43, 53); border-radius: 10px;" data-highlight-theme="solarized-dark"><pre class="none"><code style="padding: 20px;" class="hljs routeros">     +----------+
+     |<span class="hljs-built_in"> Resource </span>|
+     |  Owner   |
+     |          |
+     +----------+
+          v
+          |   <span class="hljs-built_in"> Resource </span>Owner
+         (A) Password Credentials
+          |
+          v
+     +---------+                                  +---------------+
+     |         |&gt;--(B)----<span class="hljs-built_in"> Resource </span>Owner -------&gt;|               |
+     |         |         Password Credentials     | Authorization |
+     |<span class="hljs-built_in"> Client </span> |                                  |    <span class="hljs-built_in"> Server </span>   |
+     |         |&lt;--(C)---- Access Token ---------&lt;|               |
+     |         |    (w/ Optional Refresh Token)   |               |
+     +---------+                                  +---------------+
+
+            Figure 5:<span class="hljs-built_in"> Resource </span>Owner Password Credentials Flow</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 419px; left: 440px; top: 190px;" data-block-id="b98cb02a775ae2a20d819e11ac0799ed"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(204, 204, 204);">
+<p><strong>密码模式</strong></p>
+
+<p><strong>（</strong>Resource Owner Password Credentials Grant<strong>）</strong></p>
+</div></div></section><section data-id="bcc96d9931e2e2c9a9d53355c0f73830" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 137px; left: 0px; top: 0px; height: auto;" data-block-id="3685900518da154801fa25babfee2ac9"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="background-color: rgb(241, 194, 50); color: rgb(17, 17, 17); z-index: 11; font-size: 70%;">
+<pre>OAuth2 协议</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 43px; height: auto;" data-block-id="1dc99f516829182a5f1a9a106f18ccdf"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="background-color: rgb(241, 194, 50); color: rgb(17, 17, 17); z-index: 12;">
+<h1>OAuth 授权方式</h1>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 773px; height: 230px; left: 94px; top: 317px;" data-block-id="f53a67195338e71603f7653084f8e02f"><div class="sl-block-content notranslate" style="z-index: 10; border-style: solid; border-width: 10px; border-color: rgb(2, 43, 53); border-radius: 10px;" data-highlight-theme="solarized-dark"><pre class="none"><code style="padding: 20px;" class="hljs routeros">     +---------+                                  +---------------+
+     |         |                                  |               |
+     |         |&gt;--(A)-<span class="hljs-built_in"> Client </span>Authentication ---&gt;| Authorization |
+     |<span class="hljs-built_in"> Client </span> |                                  |    <span class="hljs-built_in"> Server </span>   |
+     |         |&lt;--(B)---- Access Token ---------&lt;|               |
+     |         |                                  |               |
+     +---------+                                  +---------------+
+
+                     Figure 6:<span class="hljs-built_in"> Client </span>Credentials Flow</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 511px; left: 225px; top: 186px;" data-block-id="3135a58ec2f03b8a4768e918fa4a4ca8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(17, 17, 17);">
+<p><strong>客户端模式</strong></p>
+
+<p>（Client Credentials Grant）</p>
+</div></div></section>
+			</div>
+		<div class="backgrounds"><div class="slide-background present" data-loaded="true" style="display: block;"><div class="slide-background-content"></div></div><div class="slide-background future" data-loaded="true" style="display: block;"><div class="slide-background-content"></div></div><div class="slide-background future" data-loaded="true" style="display: block;"><div class="slide-background-content"></div></div><div class="slide-background stack future" style="display: none;" data-loaded="true"><div class="slide-background-content"></div><div class="slide-background present" data-loaded="true" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div></div><div class="slide-number" style="display: none;"></div><aside class="controls" data-controls-layout="bottom-right" data-controls-back-arrows="faded" style="display: block;"><button class="navigate-left" aria-label="previous slide" disabled="disabled"><div class="controls-arrow"></div></button>
+			<button class="navigate-right enabled" aria-label="next slide"><div class="controls-arrow"></div></button>
+			<button class="navigate-up" aria-label="above slide" disabled="disabled"><div class="controls-arrow"></div></button>
+			<button class="navigate-down" aria-label="below slide" disabled="disabled"><div class="controls-arrow"></div></button></aside><div class="progress" style="display: block;"><span style="transform: scaleX(0);"></span></div><div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div><div class="pause-overlay"><button class="resume-button">Resume presentation</button></div><div class="aria-status" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">理解 OAuth2 协议 </div></div>
+
+		
+		
+<script>
+	var SLConfig = {"deck":{"id":1373115,"slug":"oauth2","title":"OAuth2 协议","description":"","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2018-11-14T07:02:56.491Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/cd45eba51a7500f526f336dda8fee041/thumb.jpg?1542181212","view_count":1019,"user":{"id":558718,"username":"biezhi","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/b9858376cb84038dbbbbec2263be2164?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"lite","team_id":null,"settings":{"id":403025,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"convex","transition":"concave","theme_id":null,"theme_font":"montserrat","theme_color":"silver-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":10,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":1,"data_updated_at":1542206696742,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":null},"user":{"id":558718,"username":"biezhi","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/b9858376cb84038dbbbbec2263be2164?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"lite","team_id":null,"settings":{"id":403025,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
+</script>
+		<script src="./OAuth2 协议_files/application-50f52e96049a48fcc052db3ae8a5e93384d1f628102a6c8a1320107a920bd3cd.js" defer="defer"></script>
+		<script src="./OAuth2 协议_files/deck-4785a8382a1a6751b6a9c136ca4e3ef1895c4a472a7f221220c4de421b0b9167.js" defer="defer"></script>
+		
+
+	
+</body></html>
